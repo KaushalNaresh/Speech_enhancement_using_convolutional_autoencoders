@@ -21,6 +21,6 @@ In this repository we explore how convolutional autoencoders can be used in spee
   
   Audios can be represented in many ways but the 2 most important forms that I have used in my project are the waveforms and log-spectrograms. To begin with I first converted all .wav files into their corresponding time-series data. This kind of data has no information regarding frequency components. So to analyse the frquency components we always seek help from Fourier transormations but what kind of transformation to use. Here I have used short-time fourier transform (STFT) which gives the clear picture of how frequency components evolve with time. Since humans preception of sound is logarithmic so we will convert our spectrograms into log-spectrograms i.e. convert power into decibels. We can interpret these spectrograms as images and feed them to Convolutional autoencoders for denoising. Our model takes noisy-speech spectrograms (X) as input and noise-spectrograms (Y) as output. We can generate clean speech spectrograms using (X-Y). These clean-speach spectrograms generated from the model can be converted back to time series data and .wav file using librosa.
   
-![alt text](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/images/Unet_output.PNG)
+![alt text](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/images/C-Autoencoder-Output.PNG)
   
  </div>
