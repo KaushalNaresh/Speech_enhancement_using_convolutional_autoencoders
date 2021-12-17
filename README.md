@@ -19,6 +19,9 @@ In this repository we explore how convolutional autoencoders can be used in spee
 
 ![alt text](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/images/Waveform.PNG)
 ![alt text](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/images/C-Autoencoder-Output.PNG)
+
+[Input audio file](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Output/input.wav)
+[Output audio file](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Output/output.wav)
  
 >## References
 
