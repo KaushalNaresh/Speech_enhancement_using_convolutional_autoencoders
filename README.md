@@ -31,4 +31,5 @@ In this repository we explore how convolutional autoencoders can be used in spee
 3. A FULLY CONVOLUTIONAL NEURAL NETWORK FOR SPEECH ENHANCEMENT by Se Rim Park and Jin Won Lee. [Link](https://arxiv.org/pdf/1609.07132.pdf)
 4. Speech Denoising DNN [Link](https://github.com/achaitu/SpeechDenoisingDNN?utm_source=catalyzex.com)
 5. Sound Of AI youtube channel [Link](https://www.youtube.com/c/ValerioVelardoTheSoundofAI)
+6. Digital signal processing [Link](https://brianmcfee.net/dstbook-site/content/intro.html)
 
