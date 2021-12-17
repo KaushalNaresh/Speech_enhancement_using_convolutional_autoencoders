@@ -10,5 +10,7 @@ This repository explores speech enhancement using Convolutional Autoencoders.
 >## Description
 
 <div style="text-align: justify">
-In this repository we explore how convolutional autoencoders can be used to denoise noisy speech dataset. For experimental purposes we have taken [link](https://github.com/microsoft/MS-SNSD)
+  
+In this repository we explore how convolutional autoencoders can be used to denoise noisy speech dataset. For experimental purposes we have taken [MS-SNSD dataset](https://github.com/microsoft/MS-SNSD)
+
 </div>
