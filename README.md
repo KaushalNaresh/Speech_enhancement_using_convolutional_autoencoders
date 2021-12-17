@@ -26,7 +26,7 @@ In this repository we explore how convolutional autoencoders can be used in spee
  
 >## References
 
-1. [Research papers for speech-enhancement](https://paperswithcode.com/task/speech-enhancement)
+1. Research papers for speech-enhancement[Link](https://paperswithcode.com/task/speech-enhancement)
 2. Speech Enhancement In Multiple-Noise Conditions using Deep Neural Networks by Anurag Kumar, Dinei Florencio. [Link](https://arxiv.org/pdf/1605.02427.pdf)
 3. A FULLY CONVOLUTIONAL NEURAL NETWORK FOR SPEECH ENHANCEMENT by Se Rim Park and Jin Won Lee. [Link](https://arxiv.org/pdf/1609.07132.pdf)
 4. Speech Denoising DNN [Link](https://github.com/achaitu/SpeechDenoisingDNN?utm_source=catalyzex.com)
