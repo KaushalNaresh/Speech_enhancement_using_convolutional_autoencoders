@@ -49,7 +49,7 @@ U-Net model at its core is convolutional autoencoder with skip connections. In t
 
 To Generate clean speech spectrograms we will use noise spectrograms generated from out model and subtract it from noisy speech spectrograms given as input. To convert log-spectrogram back to audio file we will first generate complex matrix by multiplying magnitude and its respective phase spectrograms and then use *librosa.core.istft* to generate time series data which can be converted back to .wav file using *soundfile.write*
 
-![alt text](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/images/Unet_output.png)
+![alt text](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/images/Unet_output.PNG)
 
 [Input audio file](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Output/input.wav)  
 
