@@ -21,31 +21,31 @@ Steps involved in denoising Noisy speech data:
 5. Generating clean speech spectrogram and converting those back to .wav files.
 6. Calculate WER (Word error rate) to evaluate performance of the model.
 
->### Generating noisy speech files 
+### Generating noisy speech files 
 
 We can use script provided by [MS-SNSD](https://github.com/microsoft/MS-SNSD) to generate required noisy speech files. I have already generated few for my project you can access those through this [drive link](https://drive.google.com/drive/folders/1Pzp3zh7JbEig59Oom_gxhmQ2MGx5ShCa?usp=sharing).
 
->###  Convert noisy speech files to time series data
+###  Convert noisy speech files to time series data
 
 To load .wav files for computation we can use *librosa.load* with a sampling rate of 8000. For computational purposes we will limit the size of each extracted audio files to 2\*8064 (~2 sec) and stack them in 2-D array of size (number_of_audio_files X 8064). 
 
 
 ![alt text](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/images/Waveform.PNG)
 
->### Convert time series data to log-spectrograms
+### Convert time series data to log-spectrograms
 
 Time series data has no information regarding frequency so we will use fourier transformation for this. In particular we will calculate short time fourier transformation of time series data to output complex matrix (spectrogram) which gives the clear picture of how different frequency components are evolving with time. Since humans preception of sound is logarithmic so we will convert our spectrograms into log-spectrograms i.e. convert power into decibels. For model input we only need magnitude part and for converting back spectrograms to audio files complex part is required. We will generate spectrograms for both noisy speech files and clean speech files.
 
 ![alt text](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/images/Spectrograms.PNG)
 
 
->### Training U-Net model to learn noise spectrograms
+### Training U-Net model to learn noise spectrograms
 
 U-Net model at its core is convolutional autoencoder with skip connections. In this model max-pooling is used in encoding part and up-sampling is used in decoding part. Skip connections are added from encoder to decoder to tackle vanishing gradient issue. U-Net model takes noisy speech spectrogram as input and noise speech spectrogram as output which is equal to noisy speech spectrogram - clean speech spectrogram. 
 
 ![alt text](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/images/Unet_Model.png)
 
->### Generating clean speech spectrogram and converting those back to .wav files
+### Generating clean speech spectrogram and converting those back to .wav files
 
 To Generate clean speech spectrograms we will use noise spectrograms generated from out model and subtract it from noisy speech spectrograms given as input. To convert log-spectrogram back to audio file we will first generate complex matrix by multiplying magnitude and its respective phase spectrograms and then use *librosa.core.istft* to generate time series data which can be converted back to .wav file using *soundfile.write*
 
@@ -55,7 +55,7 @@ To Generate clean speech spectrograms we will use noise spectrograms generated f
 
 [Output audio file](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Output/output.wav)
 
->###  Calculate WER (Word error rate) to evaluate performance of the model
+###  Calculate WER (Word error rate) to evaluate performance of the model
 
 Finally to evaluate the performace of our model we will use WER metric. Thanks to my friend Simon who has prepared one notebook for the same [drive link](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Source_code/Benchmark.ipynb).
 
