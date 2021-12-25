@@ -51,13 +51,10 @@ To Generate clean speech spectrograms we will use noise spectrograms generated f
 
 ![alt text](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/images/Unet_output.PNG)
 
-[Input audio file - 1](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Output/input.wav)  
+| Input | Output |
 
-[Output audio file - 1](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Output/output.wav)
-
-[Input audio file - 2](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Output/Input_with_Enzo_noise.wav)
-
-[Output audio file - 2](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Output/Output_without_Enzo_noise.wav)
+| [Input audio file - 1](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Output/input.wav) | [Output audio file - 1](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Output/output.wav) |
+| [Input audio file - 2](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Output/Input_with_Enzo_noise.wav) | [Output audio file - 2](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Output/Output_without_Enzo_noise.wav) |
 
 ###  Calculate metrics to evaluate performance of the model
 
