@@ -19,7 +19,7 @@ Steps involved in denoising Noisy speech data:
 3. Convert time series data to log-spectrograms.
 4. Training U-Net model to learn noise spectrograms.
 5. Generating clean speech spectrogram and converting those back to .wav files.
-6. Calculate WER (Word error rate) to evaluate performance of the model.
+6. Calculate WER (Word error rate), MER (Match error rate) and WIL (Word information lost) to evaluate performance of the model.
 
 ### Generating noisy speech files 
 
@@ -55,9 +55,9 @@ To Generate clean speech spectrograms we will use noise spectrograms generated f
 
 [Output audio file](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Output/output.wav)
 
-###  Calculate WER (Word error rate) to evaluate performance of the model
+###  Calculate metrics to evaluate performance of the model
 
-Finally to evaluate the performace of our model we will use WER metric. Thanks to my friend Simon who has prepared one notebook for the same [drive link](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Source_code/Benchmark.ipynb).
+Finally to evaluate the performace of our model we will use WER (Word error rate), MER (Match error rate) and WIL (Word information lost) metrics. Thanks to my friend Simon who has prepared one notebook for the same [drive link](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Source_code/Benchmark.ipynb).
 
  
 >## References
