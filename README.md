@@ -58,7 +58,7 @@ To Generate clean speech spectrograms we will use noise spectrograms generated f
 
 ###  Calculate metrics to evaluate performance of the model
 
-Finally to evaluate the performace of our model we will use WER (Word error rate), MER (Match error rate) and WIL (Word information lost) metrics. Thanks to my friend Simon who has prepared one notebook for the same [Link](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Source_code/Benchmark.ipynb).
+Finally to evaluate the performace of our model we will use WER (Word error rate), MER (Match error rate) and WIL (Word information lost) metrics. Thanks to my friend Simon who has prepared one notebook for the same ([Link](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Source_code/Benchmark.ipynb)).
 
  
 >## References
