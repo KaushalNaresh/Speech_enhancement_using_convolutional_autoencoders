@@ -4,7 +4,8 @@ This repository explores speech enhancement using Convolutional Autoencoders.
 >## Table of Contents
 1. [Description](#description)
 2. [Methodology](#methodology)
-3. [References](#references)
+3. [How to run](#how-to-run)
+4. [References](#references)
 
 >## Description
   
@@ -60,6 +61,11 @@ To Generate clean speech spectrograms we will use noise spectrograms generated f
 
 Finally to evaluate the performace of our model we will use WER (Word error rate), MER (Match error rate) and WIL (Word information lost) metrics. Thanks to my friend Simon who has prepared one notebook for the same ([Link](https://github.com/KaushalNaresh/Speech_enhancement_using_convolutional_autoencoders/blob/main/Source_code/Benchmark.ipynb)).
 
+>## How to run
+
+There are 2 options to denoise data :
+1. Retrain the whole network on some new data.
+2. Use pre-trained model from Models folder and get the denoised output.
  
 >## References
 
